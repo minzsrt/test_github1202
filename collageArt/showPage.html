@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://localhost/collageArt/showPage.php?group_id=C01 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Collage Art</title>
+	<link rel="stylesheet" type="text/css" href="./showPage_files/reset.css">
+	<link rel="stylesheet" type="text/css" href="./showPage_files/style_design.css">
+	<link href="./showPage_files/css" rel="stylesheet">
+	<script type="text/javascript" src="./showPage_files/jquery.min.js"></script>
+	<link rel="stylesheet" href="./showPage_files/bootstrap.css">
+	<link href="./showPage_files/all.css" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+ 
+ 
+</head>
+<body style="background-color: #74d1ea;">
+	<header class="head">
+			<div class="tab-menu">
+				<p class="headtextTab"><a href="http://localhost/collageArt/index.php"><i class="fas fa-chevron-left"></i> BACK</a></p>
+				<div id="nav-icon3">
+	  			<span></span>
+	  			<span></span>
+	  			<span></span>
+	  			<span></span>
+				</div>
+			</div>
+	</header>
+
+	<nav class="menu">
+		<ul>
+			<li class="menu-list"><a href="http://localhost/collageArt/index.php">HOME</a></li>
+			<li class="menu-list"><a href="http://localhost/collageArt/showPage.php?group_id=C01#">POPULAR</a></li>
+		</ul>
+	</nav>
+
+<div>
+	<div class="leftimg">
+		<div class="container ">
+			<div class="row row_wrap">
+		        <div class="col-md-8 ">
+		        	<br>
+		 
+		        	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		        		<ol class="carousel-indicators">
+		        			<li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+		        			<li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+		        		</ol>
+		 
+		        		<div class="carousel-inner" role="listbox">
+		        			<div class="carousel-item">
+		        				
+		        				<img src="./showPage_files/01_2.jpg">
+		        				
+		        			</div>
+		 
+		        			<div class="carousel-item active">
+		        	
+		        				<img src="./showPage_files/01_1.jpg">
+		 
+		        				<div class="carousel-caption">
+		        					<p>REFERENCE</p>
+		        				</div>
+		        			</div>
+		 
+		        			
+		        		</div>
+		 
+		        		<a class="left carousel-control" href="http://localhost/collageArt/showPage.php?group_id=C01#carousel-example-generic" role="button" data-slide="prev">
+		        			<span class="icon-prev" aria-hidden="true"></span>
+		        			<span class="sr-only">Previous</span>
+		        		</a>
+		 
+		        		<a class="right carousel-control" href="http://localhost/collageArt/showPage.php?group_id=C01#carousel-example-generic" role="button" data-slide="next">
+		        			<span class="icon-next" aria-hidden="true"></span>
+		        			<span class="sr-only">Next</span>
+		        		</a>
+		        	</div>
+		        </div>
+	      	</div>
+		</div>
+	</div>
+
+	<div class="rightdetail">
+		<div class="textgroup"><span>C01</span></div>
+
+		<div class="detail">
+						<p>13580209 ธนาพร ผุดผ่องใส</p>
+						<p>13580250 อรณัฐ  อรรคอุดม</p>
+					</div>
+
+	<div class="div_voted">
+		<div class="voteMe">
+			<p><i class="fas fa-thumbs-up"></i> Liked</p>
+							<a href="http://localhost/collageArt/showPage.php?group_id=C18">
+					<div class="voted"><span>C18</span></div>
+				</a>
+							<a href="http://localhost/collageArt/showPage.php?group_id=C18">
+					<div class="voted"><span>C18</span></div>
+				</a>
+					</div>
+
+		<div class="voteMe">
+			<p><i class="fas fa-thumbs-down"></i> Disliked</p>
+							<a href="http://localhost/collageArt/showPage.php?group_id=C23">
+					<div class="voted2"><span>C23</span></div>
+				</a>
+							<a href="http://localhost/collageArt/showPage.php?group_id=C23">
+					<div class="voted2"><span>C23</span></div>
+				</a>
+					</div>
+
+						
+	</div>
+
+						
+
+						
+						<div class="resultVote clear_b">
+							<p><i class="fas fa-thumbs-up"></i>  0 Like</p>
+							
+													</div>
+
+						
+						<div class="resultVote">
+							<p><i class="fas fa-thumbs-down"></i>  0 Dislike</p>
+							
+												</div>	
+					
+				</div>
+	
+</div>
+      
+
+    <script src="./showPage_files/jquery.min.js(1).ดาวน์โหลด"></script>
+    <script src="./showPage_files/bootstrap.js.ดาวน์โหลด"></script>
+
+
+	<script>
+		$(document).ready(function(){
+			
+			var count=0;
+			$('#nav-icon3').click(function(){
+					if(count==0){
+					$('.menu').slideDown();
+					count+=1;
+					}else{
+						$('.menu').slideUp();	
+						count=0;
+					}
+					
+			});
+
+			$('#nav-icon3').click(function(){
+			$(this).toggleClass('open');
+			});
+
+			$('.carousel').carousel({
+				wrap: true
+			});
+
+		});		
+	</script>
+
+</body></html>
